@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hooaeg 2025/2026 3. grupp mängud</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    .filters {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .filter-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+    .search-input {
+      flex: 1;
+      min-width: 200px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .filter-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      padding: 10px 20px;
+      border: 1px solid #0066cc;
+      background: white;
+      color: #0066cc;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover {
+      background: #f0f7ff;
+    }
+    .filter-btn.active {
+      background: #0066cc;
+      color: white;
+    }
+    table {
+      width: 100%;
+      background: white;
+      border-collapse: collapse;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th {
+      background-color: #0066cc;
+      color: white;
+      padding: 12px;
+      text-align: left;
+      font-weight: bold;
+    }
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+    tr.past {
+      opacity: 0.7;
+    }
+    tr.hidden {
+      display: none;
+    }
+    .score-col {
+      font-weight: bold;
+      color: #d32f2f;
+      text-align: center;
+    }
+    .title-col {
+      font-weight: 500;
+    }
+    .location-col {
+      color: #666;
+    }
+    .score-col a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .score-col a:hover {
+      text-decoration: underline;
+    }
+    
+    .no-underline {
+      text-decoration: none !important;
+    }
+    
+    @media (max-width: 768px) {
+      table {
+        font-size: 14px;
+      }
+      th, td {
+        padding: 8px 6px;
+      }
+      .filter-row {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Hooaeg 2025/2026 3. grupp mängud</h1>
+
+  <div class="filters">
+    <div class="filter-row">
+      <input type="text" id="searchInput" class="search-input" placeholder="Otsi mängu, kohta või tulemust...">
+    </div>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">Kõik mängud</button>
+      <button class="filter-btn" data-filter="upcoming">Tulevased</button>
+      <button class="filter-btn" data-filter="past">Möödunud</button>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Aeg</th>
+        <th>Koht</th>
+        <th>Mäng</th>
+        <th>Tulemus</th>
+      </tr>
+    </thead>
+    <tbody id="gamesTable">
+            <tr class="past">
+        <td class="date-col">N, 16.10.2025 21:25</td>
+        <td class="location-col">Tondiraba Jäähall</td>
+        <td class="title-col">Vipers 2 - Darth Vepr</td>
+        <td class="score-col"><a href="https://www.hhl.ee/hooaeg-2025-2026-3-grupp-mangud?p=game&game_id=2596" target="_blank">1:1</a></td>
+      </tr>
+      <tr class="past">
+        <td class="date-col">T, 21.10.2025 22:00</td>
+        <td class="location-col">Tondiraba Jäähall</td>
+        <td class="title-col">HK Kehra Snaipers - Vipers 2</td>
+        <td class="score-col"><a href="https://www.hhl.ee/hooaeg-2025-2026-3-grupp-mangud?p=game&game_id=2506" target="_blank">2:0</a></td>
+      </tr>
+      <tr class="past">
+        <td class="date-col">N, 23.10.2025 21:00</td>
+        <td class="location-col">Haabersti jäähall</td>
+        <td class="title-col">Hambutud Kiskjad - HK Laupäevahoki</td>
+        <td class="score-col"><a href="https://www.hhl.ee/hooaeg-2025-2026-3-grupp-mangud?p=game&game_id=2517" target="_blank">1:2</a></td>
+      </tr>
+      <tr class="past">
+        <td class="date-col">E, 27.10.2025 22:30</td>
+        <td class="location-col">Haabersti jäähall</td>
+        <td class="title-col">HK Kakumäe Kullid - Hambutud Kiskjad</td>
+        <td class="score-col"><a href="https://www.hhl.ee/hooaeg-2025-2026-3-grupp-mangud?p=game&game_id=2504" target="_blank">2:1</a></td>
+      </tr>
+      <tr class="past">
+        <td class="date-col">N, 30.10.2025 21:25</td>
+        <td class="location-col">Tondiraba Jäähall</td>
+        <td class="title-col">Vipers 2 - HK Kakumäe Kullid</td>
+        <td class="score-col"><a href="https://www.hhl.ee/hooaeg-2025-2026-3-grupp-mangud?p=game&game_id=2516" target="_blank">3:1</a></td>
+      </tr>
+      <tr class="past">
+        <td class="date-col">T, 04.11.2025 20:30</td>
+        <td class="location-col">Haabersti jäähall</td>
+        <td class="title-col">HK Kehra Snaipers - Hambutud Kiskjad</td>
+        <td class="score-col"><a href="https://www.hhl.ee/hooaeg-2025-2026-3-grupp-mangud?p=game&game_id=2512" target="_blank">2:0</a></td>
+      </tr>
+      <tr class="past">
+        <td class="date-col">N, 13.11.2025 21:50</td>
+        <td class="location-col">Tondiraba Jäähall</td>
+        <td class="title-col">Darth Vepr - HK Laupäevahoki</td>
+        <td class="score-col"><a href="https://www.hhl.ee/hooaeg-2025-2026-3-grupp-mangud?p=game&game_id=2598" target="_blank">5:1</a></td>
+      </tr>
+      <tr class="past">
+        <td class="date-col">N, 20.11.2025 21:25</td>
+        <td class="location-col">Tondiraba Jäähall</td>
+        <td class="title-col">Vipers 2 - Hambutud Kiskjad</td>
+        <td class="score-col"><a href="https://www.hhl.ee/hooaeg-2025-2026-3-grupp-mangud?p=game&game_id=2511" target="_blank">2:1</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">E, 24.11.2025 22:30</td>
+        <td class="location-col">Haabersti jäähall</td>
+        <td class="title-col">HK Kakumäe Kullid - Darth Vepr</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=HK+Kakum%C3%A4e+Kullid+-+Darth+Vepr&dates=20251124T223000%2F20251124T232000&details=&location=Haabersti+j%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">N, 27.11.2025 21:00</td>
+        <td class="location-col">Haabersti jäähall</td>
+        <td class="title-col">Hambutud Kiskjad - Darth Vepr</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Hambutud+Kiskjad+-+Darth+Vepr&dates=20251127T210000%2F20251127T215000&details=&location=Haabersti+j%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">L, 29.11.2025 19:30</td>
+        <td class="location-col">Haabersti jäähall</td>
+        <td class="title-col">HK Laupäevahoki - HK Kehra Snaipers</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=HK+Laup%C3%A4evahoki+-+HK+Kehra+Snaipers&dates=20251129T193000%2F20251129T202000&details=&location=Haabersti+j%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">N, 04.12.2025 21:50</td>
+        <td class="location-col">Tondiraba Jäähall</td>
+        <td class="title-col">Darth Vepr - HK Kehra Snaipers</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Darth+Vepr+-+HK+Kehra+Snaipers&dates=20251204T215000%2F20251204T224000&details=&location=Tondiraba+J%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">E, 08.12.2025 22:30</td>
+        <td class="location-col">Haabersti jäähall</td>
+        <td class="title-col">HK Kakumäe Kullid - HK Kehra Snaipers</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=HK+Kakum%C3%A4e+Kullid+-+HK+Kehra+Snaipers&dates=20251208T223000%2F20251208T232000&details=&location=Haabersti+j%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">N, 11.12.2025 21:00</td>
+        <td class="location-col">Haabersti jäähall</td>
+        <td class="title-col">Hambutud Kiskjad - HK Kakumäe Kullid</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Hambutud+Kiskjad+-+HK+Kakum%C3%A4e+Kullid&dates=20251211T210000%2F20251211T215000&details=&location=Haabersti+j%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">N, 11.12.2025 21:50</td>
+        <td class="location-col">Tondiraba Jäähall</td>
+        <td class="title-col">Darth Vepr - Vipers 2</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Darth+Vepr+-+Vipers+2&dates=20251211T215000%2F20251211T224000&details=&location=Tondiraba+J%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">L, 13.12.2025 19:30</td>
+        <td class="location-col">Haabersti jäähall</td>
+        <td class="title-col">HK Laupäevahoki - Vipers 2</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=HK+Laup%C3%A4evahoki+-+Vipers+2&dates=20251213T193000%2F20251213T202000&details=&location=Haabersti+j%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">T, 16.12.2025 22:30</td>
+        <td class="location-col">Tondiraba Jäähall</td>
+        <td class="title-col">HK Kehra Snaipers - HK Laupäevahoki</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=HK+Kehra+Snaipers+-+HK+Laup%C3%A4evahoki&dates=20251216T223000%2F20251216T232000&details=&location=Tondiraba+J%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">L, 20.12.2025 19:30</td>
+        <td class="location-col">Haabersti jäähall</td>
+        <td class="title-col">HK Laupäevahoki - Darth Vepr</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=HK+Laup%C3%A4evahoki+-+Darth+Vepr&dates=20251220T193000%2F20251220T202000&details=&location=Haabersti+j%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">N, 08.01.2026 21:25</td>
+        <td class="location-col">Tondiraba Jäähall</td>
+        <td class="title-col">Vipers 2 - HK Kehra Snaipers</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Vipers+2+-+HK+Kehra+Snaipers&dates=20260108T212500%2F20260108T221500&details=&location=Tondiraba+J%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">E, 12.01.2026 22:30</td>
+        <td class="location-col">Haabersti jäähall</td>
+        <td class="title-col">HK Kakumäe Kullid - HK Laupäevahoki</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=HK+Kakum%C3%A4e+Kullid+-+HK+Laup%C3%A4evahoki&dates=20260112T223000%2F20260112T232000&details=&location=Haabersti+j%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">N, 15.01.2026 21:50</td>
+        <td class="location-col">Tondiraba Jäähall</td>
+        <td class="title-col">Darth Vepr - Hambutud Kiskjad</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Darth+Vepr+-+Hambutud+Kiskjad&dates=20260115T215000%2F20260115T224000&details=&location=Tondiraba+J%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">T, 20.01.2026 22:30</td>
+        <td class="location-col">Tondiraba Jäähall</td>
+        <td class="title-col">HK Kehra Snaipers - HK Kakumäe Kullid</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=HK+Kehra+Snaipers+-+HK+Kakum%C3%A4e+Kullid&dates=20260120T223000%2F20260120T232000&details=&location=Tondiraba+J%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">N, 22.01.2026 21:00</td>
+        <td class="location-col">Haabersti jäähall</td>
+        <td class="title-col">Hambutud Kiskjad - Vipers 2</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Hambutud+Kiskjad+-+Vipers+2&dates=20260122T210000%2F20260122T215000&details=&location=Haabersti+j%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">T, 27.01.2026 21:00</td>
+        <td class="location-col">Haabersti jäähall</td>
+        <td class="title-col">Hambutud Kiskjad - HK Kehra Snaipers</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Hambutud+Kiskjad+-+HK+Kehra+Snaipers&dates=20260127T210000%2F20260127T215000&details=&location=Haabersti+j%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">N, 29.01.2026 21:25</td>
+        <td class="location-col">Tondiraba Jäähall</td>
+        <td class="title-col">Vipers 2 - HK Laupäevahoki</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Vipers+2+-+HK+Laup%C3%A4evahoki&dates=20260129T212500%2F20260129T221500&details=&location=Tondiraba+J%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">T, 03.02.2026 22:30</td>
+        <td class="location-col">Tondiraba Jäähall</td>
+        <td class="title-col">HK Kehra Snaipers - Darth Vepr</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=HK+Kehra+Snaipers+-+Darth+Vepr&dates=20260203T223000%2F20260203T232000&details=&location=Tondiraba+J%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">N, 05.02.2026 21:50</td>
+        <td class="location-col">Tondiraba Jäähall</td>
+        <td class="title-col">Darth Vepr - HK Kakumäe Kullid</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Darth+Vepr+-+HK+Kakum%C3%A4e+Kullid&dates=20260205T215000%2F20260205T224000&details=&location=Tondiraba+J%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">L, 07.02.2026 19:30</td>
+        <td class="location-col">Haabersti jäähall</td>
+        <td class="title-col">HK Laupäevahoki - Hambutud Kiskjad</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=HK+Laup%C3%A4evahoki+-+Hambutud+Kiskjad&dates=20260207T193000%2F20260207T202000&details=&location=Haabersti+j%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+      <tr>
+        <td class="date-col">E, 09.02.2026 22:30</td>
+        <td class="location-col">Haabersti jäähall</td>
+        <td class="title-col">HK Kakumäe Kullid - Vipers 2</td>
+        <td class="score-col"><a class="no-underline" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=HK+Kakum%C3%A4e+Kullid+-+Vipers+2&dates=20260209T223000%2F20260209T232000&details=&location=Haabersti+j%C3%A4%C3%A4hall&ctz=Europe%2FTallinn" target="_blank">🗓️</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const tableRows = document.querySelectorAll('#gamesTable tr');
+
+    let currentFilter = 'all';
+    let searchQuery = '';
+
+    // Initialize from URL query parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterParam = urlParams.get('filter');
+    const searchParam = urlParams.get('search');
+
+    if (filterParam && ['all', 'upcoming', 'past'].includes(filterParam)) {
+      currentFilter = filterParam;
+      filterButtons.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.filter === filterParam);
+      });
+    }
+
+    if (searchParam) {
+      searchQuery = searchParam.toLowerCase();
+      searchInput.value = searchParam;
+    }
+
+    // Apply initial filters from URL
+    applyFilters();
+
+    // Search functionality
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value.toLowerCase();
+      updateURL();
+      applyFilters();
+    });
+
+    // Filter buttons
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentFilter = btn.dataset.filter;
+        updateURL();
+        applyFilters();
+      });
+    });
+    
+    function updateURL() {
+      const params = new URLSearchParams();
+      if (currentFilter !== 'all') {
+        params.set('filter', currentFilter);
+      }
+      if (searchQuery) {
+        params.set('search', searchQuery);
+      }
+      const newURL = params.toString() ? '?' + params.toString() : window.location.pathname;
+      window.history.replaceState({}, '', newURL);
+    }
+
+    function applyFilters() {
+      tableRows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        const isPast = row.classList.contains('past');
+        const scoreCell = row.querySelector('.score-col');
+        const hasScore = scoreCell && scoreCell.textContent.trim() !== '' && scoreCell.textContent.trim() !== '-';
+
+        // Search filter
+        const matchesSearch = searchQuery === '' || text.includes(searchQuery);
+
+        // Category filter
+        let matchesFilter = false;
+        switch(currentFilter) {
+          case 'all':
+            matchesFilter = true;
+            break;
+          case 'upcoming':
+            matchesFilter = !isPast;
+            break;
+          case 'past':
+            matchesFilter = isPast;
+            break;
+        }
+
+        if (matchesSearch && matchesFilter) {
+          row.classList.remove('hidden');
+        } else {
+          row.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
