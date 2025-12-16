@@ -86,8 +86,8 @@
       "endAt": "2025-12-13T18:20:00.000Z",
       "location": "Haabersti jäähall",
       "title": "HK Laupäevahoki - Vipers 2",
-      "score": null,
-      "link": null
+      "score": "1:0",
+      "link": "https://www.hhl.ee/hooaeg-2025-2026-3-grupp-mangud?p=game&game_id=2513"
     },
     {
       "startAt": "2025-11-24T20:00:00.000Z",
@@ -114,8 +114,8 @@
       "link": "https://www.hhl.ee/hooaeg-2025-2026-3-grupp-mangud?p=game&game_id=2517"
     },
     {
-      "startAt": "2025-12-16T20:30:00.000Z",
-      "endAt": "2025-12-16T21:20:00.000Z",
+      "startAt": "2025-12-16T20:15:00.000Z",
+      "endAt": "2025-12-16T21:05:00.000Z",
       "location": "Tondiraba Jäähall",
       "title": "HK Kehra Snaipers - HK Laupäevahoki",
       "score": null,
@@ -126,12 +126,12 @@
       "endAt": "2025-12-11T19:50:00.000Z",
       "location": "Haabersti jäähall",
       "title": "Hambutud Kiskjad - HK Kakumäe Kullid",
-      "score": null,
-      "link": null
+      "score": "1:1",
+      "link": "https://www.hhl.ee/hooaeg-2025-2026-3-grupp-mangud?p=game&game_id=2602"
     },
     {
-      "startAt": "2025-12-16T19:25:00.000Z",
-      "endAt": "2025-12-16T20:15:00.000Z",
+      "startAt": "2025-12-16T19:20:00.000Z",
+      "endAt": "2025-12-16T20:10:00.000Z",
       "location": "Tondiraba Jäähall",
       "title": "Darth Vepr - Vipers 2",
       "score": null,
