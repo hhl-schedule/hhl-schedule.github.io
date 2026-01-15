@@ -98,6 +98,14 @@
       "link": "https://www.hhl.ee/hooaeg-2025-2026-3-grupp-mangud?p=game&game_id=2599"
     },
     {
+      "startAt": "2026-02-12T19:50:00.000Z",
+      "endAt": "2026-02-12T20:40:00.000Z",
+      "location": "Tondiraba Jäähall",
+      "title": "Darth Vepr - HK Kehra Snaipers",
+      "score": null,
+      "link": null
+    },
+    {
       "startAt": "2025-10-30T19:25:00.000Z",
       "endAt": "2025-10-30T20:15:00.000Z",
       "location": "Tondiraba Jäähall",
@@ -146,8 +154,8 @@
       "link": "https://www.hhl.ee/hooaeg-2025-2026-3-grupp-mangud?p=game&game_id=2604"
     },
     {
-      "startAt": "2026-01-15T19:50:00.000Z",
-      "endAt": "2026-01-15T20:40:00.000Z",
+      "startAt": "2026-02-10T19:20:00.000Z",
+      "endAt": "2026-02-10T20:10:00.000Z",
       "location": "Tondiraba Jäähall",
       "title": "Darth Vepr - Hambutud Kiskjad",
       "score": null,
@@ -162,8 +170,8 @@
       "link": "https://www.hhl.ee/hooaeg-2025-2026-3-grupp-mangud?p=game&game_id=2606"
     },
     {
-      "startAt": "2026-01-20T20:30:00.000Z",
-      "endAt": "2026-01-20T21:20:00.000Z",
+      "startAt": "2026-01-20T20:15:00.000Z",
+      "endAt": "2026-01-20T21:05:00.000Z",
       "location": "Tondiraba Jäähall",
       "title": "HK Kehra Snaipers - HK Kakumäe Kullid",
       "score": null,
