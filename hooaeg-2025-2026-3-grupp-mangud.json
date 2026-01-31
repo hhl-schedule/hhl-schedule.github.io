@@ -178,14 +178,6 @@
       "link": "https://www.hhl.ee/hooaeg-2025-2026-3-grupp-mangud?p=game&game_id=2607"
     },
     {
-      "startAt": "2026-02-21T17:30:00.000Z",
-      "endAt": "2026-02-21T18:20:00.000Z",
-      "location": "Haabersti jäähall",
-      "title": "HK Laupäevahoki - Darth Vepr",
-      "score": null,
-      "link": null
-    },
-    {
       "startAt": "2026-01-22T19:00:00.000Z",
       "endAt": "2026-01-22T19:50:00.000Z",
       "location": "Haabersti jäähall",
@@ -238,6 +230,126 @@
       "endAt": "2026-02-07T18:20:00.000Z",
       "location": "Haabersti jäähall",
       "title": "HK Laupäevahoki - Hambutud Kiskjad",
+      "score": null,
+      "link": null
+    },
+    {
+      "startAt": "2026-03-14T17:30:00.000Z",
+      "endAt": "2026-03-14T18:20:00.000Z",
+      "location": "Haabersti jäähall",
+      "title": "HK Laupäevahoki - HK Kehra Snaipers",
+      "score": null,
+      "link": null
+    },
+    {
+      "startAt": "2026-03-12T19:00:00.000Z",
+      "endAt": "2026-03-12T19:50:00.000Z",
+      "location": "Haabersti jäähall",
+      "title": "HK Kakumäe Kullid - Hambutud Kiskjad",
+      "score": null,
+      "link": null
+    },
+    {
+      "startAt": "2026-02-19T19:25:00.000Z",
+      "endAt": "2026-02-19T20:15:00.000Z",
+      "location": "Tondiraba Jäähall",
+      "title": "Vipers 2 - Darth Vepr",
+      "score": null,
+      "link": null
+    },
+    {
+      "startAt": "2026-03-02T20:15:00.000Z",
+      "endAt": "2026-03-02T21:05:00.000Z",
+      "location": "Tondiraba Jäähall",
+      "title": "HK Kehra Snaipers - Vipers 2",
+      "score": null,
+      "link": null
+    },
+    {
+      "startAt": "2026-03-05T19:00:00.000Z",
+      "endAt": "2026-03-05T19:50:00.000Z",
+      "location": "Haabersti jäähall",
+      "title": "Hambutud Kiskjad - Darth Vepr",
+      "score": null,
+      "link": null
+    },
+    {
+      "startAt": "2026-03-28T17:30:00.000Z",
+      "endAt": "2026-03-28T18:20:00.000Z",
+      "location": "Haabersti jäähall",
+      "title": "HK Laupäevahoki - HK Kakumäe Kullid",
+      "score": null,
+      "link": null
+    },
+    {
+      "startAt": "2026-03-09T20:30:00.000Z",
+      "endAt": "2026-03-09T21:20:00.000Z",
+      "location": "Haabersti jäähall",
+      "title": "HK Kakumäe Kullid - HK Kehra Snaipers",
+      "score": null,
+      "link": null
+    },
+    {
+      "startAt": "2026-03-19T19:50:00.000Z",
+      "endAt": "2026-03-19T20:40:00.000Z",
+      "location": "Tondiraba Jäähall",
+      "title": "Darth Vepr - HK Laupäevahoki",
+      "score": null,
+      "link": null
+    },
+    {
+      "startAt": "2026-03-26T19:25:00.000Z",
+      "endAt": "2026-03-26T20:15:00.000Z",
+      "location": "Tondiraba Jäähall",
+      "title": "Vipers 2 - Hambutud Kiskjad",
+      "score": null,
+      "link": null
+    },
+    {
+      "startAt": "2026-03-17T20:15:00.000Z",
+      "endAt": "2026-03-17T21:05:00.000Z",
+      "location": "Tondiraba Jäähall",
+      "title": "HK Kehra Snaipers - Hambutud Kiskjad",
+      "score": null,
+      "link": null
+    },
+    {
+      "startAt": "2026-04-11T16:30:00.000Z",
+      "endAt": "2026-04-11T17:20:00.000Z",
+      "location": "Haabersti jäähall",
+      "title": "HK Laupäevahoki - Vipers 2",
+      "score": null,
+      "link": null
+    },
+    {
+      "startAt": "2026-03-30T19:30:00.000Z",
+      "endAt": "2026-03-30T20:20:00.000Z",
+      "location": "Haabersti jäähall",
+      "title": "HK Kakumäe Kullid - Darth Vepr",
+      "score": null,
+      "link": null
+    },
+    {
+      "startAt": "2026-04-07T18:20:00.000Z",
+      "endAt": "2026-04-07T19:10:00.000Z",
+      "location": "Tondiraba Jäähall",
+      "title": "Darth Vepr - HK Kehra Snaipers",
+      "score": null,
+      "link": null
+    },
+    {
+      "startAt": "2026-04-09T18:25:00.000Z",
+      "endAt": "2026-04-09T19:15:00.000Z",
+      "location": "Tondiraba Jäähall",
+      "title": "Vipers 2 - HK Kakumäe Kullid",
+      "score": null,
+      "link": null
+    },
+    {
+      "startAt": "2026-04-14T18:00:00.000Z",
+      "endAt": "2026-04-14T18:50:00.000Z",
+      "location": "Haabersti jäähall",
+      "title": "Hambutud Kiskjad - HK Laupäevahoki",
       "score": null,
       "link": null
     }
